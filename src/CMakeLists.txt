@@ -20,10 +20,10 @@ FetchContent_MakeAvailable(fmt jsoncpp)
 
 
 add_subdirectory(lib1)
-
+add_subdirectory(lib2)
 add_executable(${PROJECT_NAME}-1 app1/main.cpp)
 add_executable(${PROJECT_NAME}-2 app2/main.cpp)
-target_link_libraries(${PROJECT_NAME}-1 lib1 fmt::fmt jsoncpp_lib)
+target_link_libraries(${PROJECT_NAME}-1 lib1 lib2 fmt::fmt jsoncpp_lib)
 
 
 #add_subdirectory(lib2)
