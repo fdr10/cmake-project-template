@@ -14,7 +14,7 @@ FetchContent_Declare(
 #GoogleBenchmark
 FetchContent_Declare(googlebenchmark
         GIT_REPOSITORY https://github.com/google/benchmark.git
-        GIT_TAG master
+        GIT_TAG v1.7.0
 ) # need master for benchmark::benchmark
 # Make fetched content available
 FetchContent_MakeAvailable(googletest googlebenchmark)
