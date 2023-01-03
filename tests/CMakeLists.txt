@@ -27,6 +27,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE GTest::gtest_main benchmark::bench
 
 
 include(GoogleTest)
+#Uncomment the line below to run test when compiling
 gtest_discover_tests(${PROJECT_NAME})
 
 
